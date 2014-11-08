@@ -10,6 +10,7 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 */
 
+/* simple recursive function for getting the n:th fibonacci number */
 int fibonacci(int n){
 	if(n == 0){
 		return 0;
@@ -26,7 +27,7 @@ void problem_002(void){
 	int sum = 0;
 	while(n < 4000000){		
 		sum += n;		
-		n = fibonacci(3*m);
+		n = fibonacci(3*m); /* Only every third fibonacci number is even */
 		m++;
 	}
 	printf("%i", sum);
