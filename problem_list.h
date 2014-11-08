@@ -5,6 +5,7 @@
 void problem_001(void);
 void problem_002(void);
 void problem_003(void);
+void problem_004(void);
 
 /* defines a function pointer to problem functions, and a struct for associating problem numbers with their problem functions */
 typedef void (*function_pointer)(void);
@@ -18,6 +19,7 @@ problem_list solved_problems[] = {
 	{  1, &problem_001},
 	{  2, &problem_002},
 	{  3, &problem_003},
+	{  4, &problem_004},
 };
 
 #endif
