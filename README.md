@@ -1,4 +1,7 @@
 ProjectEuler
 ============
 
-A collection of my solutions for various problems from projecteuler.net
+A collection of my solutions, in ANSI C, for various problems from projecteuler.net
+
+usage: ProjectEuler &lt;problem number&gt;
+
