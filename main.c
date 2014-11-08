@@ -32,7 +32,7 @@ void check_args(int argc, char **argv){
 int main(int argc, char **argv){
 	check_args(argc,argv);
 	int problem_number = intfromstr(argv[1]);
-	int number_of_problems = sizeof(solved_problems)/sizeof(*solved_problems); /* gets */
+	int number_of_problems = sizeof(solved_problems)/sizeof(*solved_problems); 
 	int i;
 	/* iterate over list of solved problems, and if the input matches a solved problem calls it's corresponding function pointer, see problem_list.h for list of solved problems */
 	for(i = 0; i <= number_of_problems-1; i++){
