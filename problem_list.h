@@ -2,6 +2,7 @@
 #define PROBLEM_LIST_H
 
 void problem_001(void);
+void problem_002(void);
 
 typedef void (*function_pointer)(void);
 typedef struct problem_list{
@@ -10,7 +11,8 @@ typedef struct problem_list{
 } problem_list;
 
 problem_list solved_problems[] = {	
-	{1, &problem_001},	
+	{  1, &problem_001},
+	{  2, &problem_002},
 };
 
 #endif
