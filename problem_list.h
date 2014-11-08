@@ -1,7 +1,7 @@
 #ifndef PROBLEM_LIST_H
 #define PROBLEM_LIST_H
 
-#include "problem_001.h"
+void problem_001(void);
 
 typedef void (*function_pointer)(void);
 typedef struct problem_list{
