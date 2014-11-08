@@ -2,17 +2,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <limits.h>
-#include "problem_001.h"
-
-typedef void (*function_pointer)(void);
-typedef struct problem_list{
-	int problem_id;
-	function_pointer problem_function;
-} problem_list;
-
-problem_list solved_problems[] = {	
-	{1, &problem_001}
-};
+#include "problem_list.h"
 
 int number_of_problems = sizeof(solved_problems)/sizeof(*solved_problems);
 int i;
