@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <limits.h>
+#include "problem_001.h"
 
 typedef void (*function_pointer)(void);
 typedef struct problem_list{
@@ -10,7 +11,7 @@ typedef struct problem_list{
 } problem_list;
 
 problem_list solved_problems[] = {	
-	
+	{1, &problem_001}
 };
 
 int number_of_problems = sizeof(solved_problems)/sizeof(*solved_problems);
@@ -49,4 +50,3 @@ int main(int argc, char **argv){
 	printf("Problem number %i has not been solved yet.", problem_number);
 	return 0;
 }
-
