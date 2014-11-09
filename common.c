@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "common.h"
 
+/* this file contains common functions which are, or mighe be, used by more than one problem */
+
 /* simple recursive function for getting the n:th fibonacci number */
 int fibonacci(int n){
 	if(n == 0){
