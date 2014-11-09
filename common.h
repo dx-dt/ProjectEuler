@@ -15,6 +15,7 @@ typedef struct problem_list{
 
 int fibonacci(int);
 int reverse(int);
+int digittoint(char);
 bool is_palindrome(int);
 bool is_prime(unsigned int);
 
