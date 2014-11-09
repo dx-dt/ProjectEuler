@@ -3,6 +3,7 @@
 #include <assert.h>
 #include <limits.h>
 #include <string.h>
+#include "common.h"
 #include "problem_list.h"
 
 int number_of_problems = sizeof(solved_problems)/sizeof(*solved_problems); 

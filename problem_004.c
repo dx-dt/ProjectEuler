@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "common.h"
 
 /*
 
@@ -7,9 +8,6 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 Find the largest palindrome made from the product of two 3-digit numbers.
 
 */
-
-/* ANSI C doesn't have a bool type, so let's invent the wheel again */
-typedef enum {false = 0, true = 1} bool;
 
 /* function to reverse the order of digits in int using some fancy base 10 arithmetic magic */
 int reverse(int n){
