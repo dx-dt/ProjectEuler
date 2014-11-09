@@ -25,8 +25,8 @@ int reverse(int n){
 }
 
 /* function to convert ASCII digit from char to int */
-int digittoint(char b){	
-	return (int)b - 48;
+int digittoint(char c){	
+	return (int)c - 48;
 }
 
 /* function to check if an int is a palindrome */
