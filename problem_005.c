@@ -43,10 +43,10 @@ void problem_005(void){
 			j++;
 		}
 	}
-	int coefficient[n-1];
-	int product = 1;
 	i = 0;	
 	/* calculate the coefficients for each prime using some logarithmic magic and multiply them together */
+	int coefficient[n-1];
+	int product = 1;
 	while(prime[i] != 0){
 		coefficient[i] = floor(log(n)/log(prime[i]));		
 		product = product * pow(prime[i],coefficient[i]);
