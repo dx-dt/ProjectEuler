@@ -19,7 +19,7 @@ int reverse(int n){
 	return r;
 }
 
-/* function to check if an int is a palindrome, no more no less */
+/* function to check if an int is a palindrome, uses bool type from common.h */
 bool is_palindrome(int n){
 	int m = reverse(n);
 	if(m == n){
