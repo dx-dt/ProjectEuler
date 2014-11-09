@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "common.h"
 
 /*
  
@@ -10,24 +11,13 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 */
 
-/* simple recursive function for getting the n:th fibonacci number */
-int fibonacci(int n){
-	if(n == 0){
-		return 0;
-	} else if(n == 1){
-		return 1;
-	} else {
-		return (fibonacci(n-2)+fibonacci(n-1));		
-	}
-}
-
 void problem_002(void){
 	int m =1;
 	int n = 0;
 	int sum = 0;
 	while(n < 4000000){		
 		sum += n;		
-		n = fibonacci(3*m); /* Only every third fibonacci number is even */
+		n = fibonacci(3*m); /* uses recursive fibonacci function from common.c, only every third fibonacci number is even and thus used */
 		m++;
 	}
 	printf("%i", sum);

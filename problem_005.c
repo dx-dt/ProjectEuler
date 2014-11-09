@@ -15,20 +15,6 @@ What is the smallest positive number that is evenly divisible by all of the numb
  * that the result grew far to quickly. So I switched to an approach based on the fundamental
  * theorem of arithmetic; that all natural numbers either are primes, or the product of a
  * number of primes.*/
-
-/* function to determine if an int is a prime, uses bool type from common.h */
-bool is_prime(unsigned int n){
-	if(n <= 1){
-		return false;
-	}
-	int i;
-	for(i = 2; i*i <= n; i++){
-		if(n % i == 0){
-			return false;
-		}
-	}
-	return true;
-}
  
 void problem_005(void){
 	int i;
@@ -38,7 +24,7 @@ void problem_005(void){
 	int prime[n-1];
 	memset(prime, 0, sizeof(prime));	
 	for(i = 2; i <= n-1; i++){
-		if(is_prime(i)){
+		if(is_prime(i)){ /* uses function is_prime from common.c */
 			prime[j] = i;
 			j++;
 		}

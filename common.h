@@ -11,4 +11,11 @@ typedef struct problem_list{
 	function_pointer problem_function;
 } problem_list;
 
+/* list of common functions which is, or mighe be, used by more than one problem */
+
+int fibonacci(int);
+int reverse(int);
+bool is_palindrome(int);
+bool is_prime(unsigned int);
+
 #endif
