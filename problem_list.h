@@ -10,8 +10,9 @@ void problem_005(void);
 void problem_006(void);
 void problem_007(void);
 void problem_008(void);
+void problem_009(void);
 
-/* create an array of the problem_list struct from common.h and populate it with the solved problems numbers and corresponding function pointers*/
+/* create an array of the problem_list struct from common.h and populate it with the solved problem's numbers and corresponding function pointers*/
 problem_list solved_problems[] = {	
 	{  1, &problem_001},
 	{  2, &problem_002},
@@ -21,6 +22,7 @@ problem_list solved_problems[] = {
 	{  6, &problem_006},
 	{  7, &problem_007},
 	{  8, &problem_008},
+	{  9, &problem_009},
 };
 
 #endif
