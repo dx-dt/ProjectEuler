@@ -18,5 +18,6 @@ int reverse(int);
 int digittoint(char);
 bool is_palindrome(int);
 bool is_prime(unsigned int);
+bool is_integer(float);
 
 #endif

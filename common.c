@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "common.h"
 
 /* this file contains common functions which are, or mighe be, used by more than one problem */
@@ -29,7 +30,7 @@ int digittoint(char c){
 	return (int)c - 48;
 }
 
-/* function to check if an int is a palindrome */
+/* function to determine if an int is a palindrome */
 bool is_palindrome(int n){
 	int m = reverse(n);
 	if(m == n){
@@ -51,4 +52,13 @@ bool is_prime(unsigned int n){
 		}
 	}
 	return true;
+}
+
+/* function to determine if a float is an integer */
+bool is_integer(float n){
+	if(fmod(n,1) == 0.0){
+		return true;
+	} else {
+		return false;
+	}
 }
